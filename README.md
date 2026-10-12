@@ -4,8 +4,6 @@
 
 The project combines real-time game logic, canvas-based rendering, enemy AI, combat mechanics, progression systems, and an interactive HUD in a lightweight browser game.
 
-**Repository:** https://github.com/Jahnavi-Mogarala/Zombie-Survival
-
 ---
 
 ## 🎮 Overview
