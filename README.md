@@ -134,29 +134,6 @@ Canvas rendering, lighting, hit effects, and sound effects help communicate comb
 
 ---
 
-## 🏗️ Project Architecture
-
-The project is organized into three primary files.
-
-```text
-Zombie-Survival/
-├── index.html     # Game page, canvas, HUD, and start screen
-├── style.css      # Layout, interface styling, and visual design
-├── game.js        # Game state, simulation, rendering, and combat
-└── README.md      # Project documentation
-```
-
-*This structure reflects the files described in the project documentation. Additional assets or files may exist in the repository.*
-
-### `index.html`
-
-Responsible for the page structure and interface elements, including the game canvas, HUD, mini-map, and start screen.
-
-### `style.css`
-
-Defines the visual presentation of the game, including screen layout and HUD styling.
-
-### `game.js`
 
 Contains the main gameplay implementation. Key functions include:
 
