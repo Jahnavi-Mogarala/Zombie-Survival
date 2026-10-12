@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zombie Survival Prototype</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Zombie Survival game">
+      <canvas id="gameCanvas"></canvas>
+
+      <section class="hud" aria-label="Game status">
+        <div class="hud-stack">
+          <div class="status-line">
+            <span class="label">HP</span>
+            <div class="meter" aria-hidden="true"><span id="healthBar"></span></div>
+            <span id="healthText" class="value">100</span>
+          </div>
+          <div class="status-line">
+            <span class="label">XP</span>
+            <div class="meter xp" aria-hidden="true"><span id="xpBar"></span></div>
+            <span id="levelText" class="value">1</span>
+          </div>
+        </div>
+
+        <div class="hud-center">
+          <div class="chip"><span>Wave</span><strong id="waveText">1</strong></div>
+          <div class="chip"><span>Kills</span><strong id="killsText">0</strong></div>
+          <div class="chip"><span>Scrap</span><strong id="scrapText">0</strong></div>
+        </div>
+
+        <div class="weapon-panel">
+          <canvas id="miniMap" width="128" height="92" aria-label="Mini map"></canvas>
+          <div>
+            <div id="weaponName" class="weapon-name">Pistol</div>
+            <div id="ammoText" class="ammo">12 / 80</div>
+          </div>
+        </div>
+      </section>
+
+      <div id="toast" class="toast" aria-live="polite"></div>
+
+      <section id="overlay" class="overlay show" aria-live="polite">
+        <div class="dialog">
+          <p id="overlayKicker" class="kicker">Project Nightfall</p>
+          <h1 id="overlayTitle">Zombie Survival</h1>
+          <p id="overlayBody">
+            Hold the safe zone, collect supplies, and upgrade after the attacks.
+          </p>
+          <div id="upgradeGrid" class="upgrade-grid" hidden></div>
+          <div id="overlayActions" class="actions">
+            <button id="startBtn" class="primary" type="button">Start Run</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
